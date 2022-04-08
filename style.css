@@ -118,10 +118,12 @@ table {
 
 .container-profile{
     margin-left: 100px;
+    margin-top: 50px;
+    width: 20%;
 }
 
 .img-container{
-    margin-top: 50px;
+    margin: 0 auto;
     clip-path: circle(47% at 48% 48%);
     width: 200px;
     height: 200px;
@@ -130,4 +132,18 @@ table {
 .user-img{
     width: 200px;
     
+}
+
+.container-info{
+    text-align: center;
+}
+
+.container-info > h1{
+    font-family: 'Segoe UI';
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.container-info > p{
+    font-family: 'Segoe UI';
 }
