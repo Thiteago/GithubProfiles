@@ -203,6 +203,7 @@ table {
 
 .container-repolist{
     margin: 20px 0 0 25px;
+    width: 90%;
 }
 
 .repository-wrapper{
@@ -250,4 +251,28 @@ table {
 
 .branch-container > img{
     width: 10px;
+}
+
+@media (max-width: 900px){
+    .container-main{
+        flex-direction: column;
+    }
+    .container-profile{
+        width: 100%;
+        margin: auto;
+    }
+
+    .container-content{
+        width: 100%;
+    }
+}
+
+@media (max-width: 370px){
+    .input-filter{
+        width: 230px;
+    }
+
+    .logo-container > p{
+        font-size: 20px;
+    }
 }
