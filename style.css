@@ -96,5 +96,22 @@ table {
     border: 1px solid grey;
     background: url(assets/img/searchicon.svg) no-repeat 7px 6px;
     background-size: 20px;
+}
 
+.change-button{
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.change-button:hover{
+    cursor: pointer;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
