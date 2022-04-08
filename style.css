@@ -200,3 +200,54 @@ table {
     background-size: 20px;
 
 }
+
+.container-repolist{
+    margin: 20px 0 0 25px;
+}
+
+.repository-wrapper{
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.repository-wrapper > h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #44a0eb;
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding-bottom: 7px;
+}
+
+.repository-wrapper > p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 10px;
+    color: #6b6b6b;
+}
+
+.stats-wrapper{
+    display: flex;
+}
+
+.language-container{
+    display: flex;
+}
+
+.language-container > p{
+    padding-left: 7px;
+    color: #6b6b6b;
+}
+
+.branch-container{
+    display: flex;
+    padding-left: 50px;
+}
+
+.branch-container > p{
+    padding-left: 2px;
+    color: #6b6b6b;
+}
+
+.branch-container > img{
+    width: 10px;
+}
