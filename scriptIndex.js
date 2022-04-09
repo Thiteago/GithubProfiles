@@ -1,37 +1,30 @@
-function fazGet(url){
-    let request = new XMLHttpRequest()
-    request.open("GET", url, false)
-    request.send()
-    return request.responseText
+var inputSearch = document.getElementById("user-input");
+
+
+
+var passaValor = function(valor){
+    window.location = "profile.html?minhaVariavel="+valor;
 }
 
 
 
-function main(){
 
-    var url = window.location.href;
+function indexRedirect(){
 
-    var input = document.getElementById("user-input")
-    input.addEventListener('keyup', function(event){
+    inputSearch.addEventListener('keyup', function(event){
         if(event.keyCode == 13){
-            window.location.href = '/profile.html'
+            var inputValue = inputSearch.value
+            passaValor(inputValue)
         }
     })
 
-    console.log(input.value)
-    var user = input.value
-
-    data = fazGet(`https://api.github.com/users/${user}`)
-    repositorios = JSON.parse(data);
-    
-    var userName = document.getElementById('user-name')
-    var userDescription = document.getElementById("user-description")
-
-    userName.innerHTML = repositorios.login
-    userDescription.innerHTML = repositorios.bio
-
-
 }
 
-main()
+
+
+indexRedirect()
+
+
+
+
 
