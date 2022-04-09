@@ -8,12 +8,20 @@ function Get(url){
 }
 
 function getUser(user){
-    console.log(user)
     var data = Get(`https://api.github.com/users/${user}`)
     var userInfo = JSON.parse(data);
 
     return userInfo
 }
+
+function getStarred(user){
+    var response = Get(`https://api.github.com/users/${user}/starred`)
+    var repStar = JSON.parse(response);
+
+    return repStar
+}
+
+
 
 function getRepository(user){
     var  response = Get(`https://api.github.com/users/${user}/repos`)
@@ -24,7 +32,6 @@ function getRepository(user){
 
 const urlParams = new URLSearchParams(window.location.search)
 const nomeParam = urlParams.get("minhaVariavel")
-
 var user = getUser(nomeParam)
 
 var userName = document.getElementById("user-name")
@@ -46,8 +53,13 @@ repositoryList.forEach(repository => {
 
 var container = document.getElementById("container-list")
 
+var quantidadeRepo = document.getElementById("repo-quant")
 
 arrayRepo.forEach(repo => {
+
+    var lenght = arrayRepo.length;
+    quantidadeRepo.innerText = lenght
+
     var div = document.createElement('div')
     div.classList.add("repository-wrapper")
     var h1 = document.createElement('h1')
@@ -110,8 +122,14 @@ function removeAllChildNodes(parent) {
 }
 
 
+
 function displayRepository(repositorios){
+
     removeAllChildNodes(container)
+
+    var lenght = repositorios.length;
+    quantidadeRepo.innerText = lenght
+
     repositorios.forEach(repo =>{
         
         var div = document.createElement('div')
