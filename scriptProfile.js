@@ -23,6 +23,6 @@ var userBio = document.getElementById("user-description")
 userName.innerHTML = rep.login
 userBio.innerHTML = rep.bio
 
-
+document.getElementById("profile-avatar").src=`${rep.avatar_url}`;
 
 
