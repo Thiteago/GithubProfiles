@@ -61,10 +61,43 @@ a:visited{
     src: url(assets/fonts/Collegia.ttf);
 }
 
+@font-face {
+    font-family: alliance;
+    src: url(assets/fonts/Alliance.otf);
+}
+
+
+.main-title{
+    font-family: alliance;
+    font-size: 3rem;
+    font-weight: bold;
+    color: wheat;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0px 0px 5px 1px;
+    padding: 12px 0;
+}
+
+.sub-title{
+    font-family: alliance;
+    font-size: 8rem;
+    font-weight: bold;
+    color: wheat;
+    padding-bottom: 260px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.body-container{
+    background-image: linear-gradient(to right, #DECBA4, #3E5151);
+}
 
 .main-header{
     padding: 5px 0px 5px 15px;
-    background-color: #5B646D;
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid grey;
 }
 
 .logo-container{
@@ -91,20 +124,25 @@ a:visited{
 
 .main-container{
     width: 100vw;
+    height: 100vmin;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .input-search{
     position: absolute;
-    margin-top: 40px;
+    margin-top: 100px;
     width: 300px;
-    height: 30px;
-    padding-left: 30px;
+    height: 40px;
+    padding-left: 35px;
     border-radius: 5em;
-    border: 1px solid grey;
-    background: url(assets/img/searchicon.svg) no-repeat 7px 6px;
+    border: 1px solid white;
+    background: url(assets/img/searchicon.svg) no-repeat 7px 11px;
+      background-size: auto;
     background-size: 20px;
+    color: white;
+    font-weight: bold;
 }
 
 .change-button{
@@ -159,6 +197,7 @@ a:visited{
 
 .container-main{
     display: flex;
+    padding-top: 50px;
 }
 
 .container-content{
