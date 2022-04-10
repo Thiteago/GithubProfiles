@@ -55,6 +55,7 @@ function MostraRepositorios(){
         link.href = repo.link
         var h1 = document.createElement('h1')
         h1.innerHTML = repo.nome;
+        h1.classList.add("repo-title")
         var p = document.createElement('p')
         p.innerHTML = repo.descricao
         var divWrapper = document.createElement('div')
@@ -110,6 +111,7 @@ function MostrarStar(){
         link.href = repo.link
         var h1 = document.createElement('h1')
         h1.innerHTML = repo.nome;
+        h1.classList.add("repo-title")
         var p = document.createElement('p')
         p.innerHTML = repo.descricao
         var divWrapper = document.createElement('div')
@@ -198,6 +200,7 @@ function displayRepository(resultado){
         link.href = repo.link
         var h1 = document.createElement('h1')
         h1.innerHTML = repo.nome;
+        h1.classList.add("repo-title")
         var p = document.createElement('p')
         p.innerHTML = repo.descricao
         var divWrapper = document.createElement('div')

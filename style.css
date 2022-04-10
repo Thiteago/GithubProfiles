@@ -229,6 +229,10 @@ a:visited{
     padding-bottom: 7px;
 }
 
+.repo-title{
+    padding-bottom: 7px;
+}
+
 .repository-wrapper > p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-bottom: 10px;
