@@ -248,6 +248,10 @@ a:visited{
     color: #6b6b6b;
 }
 
+.language-container > img{
+    width: 15px;
+}
+
 .branch-container{
     display: flex;
     padding-left: 50px;
