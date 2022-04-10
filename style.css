@@ -325,6 +325,22 @@ a:visited{
     }
 }
 
+@media (max-width: 615px){
+    .main-title{
+        font-size: 2rem;
+    }
+    .sub-title{
+        font-size: 5rem;
+        padding-bottom: 170px;
+    }
+}
+
+@media (max-width: 470px){
+    .main-container{
+        height: 100vh;
+    }
+}
+
 @media (max-width: 370px){
     .input-filter{
         width: 230px;
