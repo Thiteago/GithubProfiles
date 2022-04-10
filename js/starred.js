@@ -5,12 +5,14 @@ export class Starred{
     descricao;
     estrelas;
     forks;
+    link;
 
-    constructor (nome, descricao , estrelas, forks){
+    constructor (nome, descricao , estrelas, forks,link){
         this.nome = nome;
         this.descricao = descricao;
         this.estrelas = estrelas;
         this.forks = forks;
+        this.link = link;
     }
 } 
 

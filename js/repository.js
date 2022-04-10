@@ -5,12 +5,14 @@ export class Repository{
     descricao;
     linguagemPrincipal;
     forks;
+    link;
 
-    constructor (nome, descricao , linguagem, forks){
+    constructor (nome, descricao , linguagem, forks, link){
         this.nome = nome;
         this.descricao = descricao;
         this.linguagemPrincipal = linguagem;
         this.forks = forks;
+        this.link = link;
     }
 } 
 

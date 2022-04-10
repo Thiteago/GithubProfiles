@@ -221,7 +221,7 @@ a:visited{
     border-bottom: 1px solid #d4d4d4;
 }
 
-.repository-wrapper > h1{
+.repository-wrapper > a{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #44a0eb;
     font-weight: bold;

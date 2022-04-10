@@ -27,7 +27,7 @@ var repositoryList = getRepository(nomeParam);
 var arrayRepo = []
 //Armazena os dados da API dentro de um Array
 repositoryList.forEach(repository => {
-    var rep = new Repository(repository.name, repository.description, repository.language, repository.forks)
+    var rep = new Repository(repository.name, repository.description, repository.language, repository.forks, repository.html_url)
     arrayRepo.push(rep)
 });
 
@@ -37,7 +37,7 @@ var arrayStarred = []
 var starLength = arrayStarred.length;
 
 starredList.forEach(starred =>{
-    var star = new Starred(starred.name,starred.description,starred.stargazers_count,starred.forks)
+    var star = new Starred(starred.name,starred.description,starred.stargazers_count,starred.forks,starred.html_url)
     arrayStarred.push(star)
 });
 
@@ -51,6 +51,8 @@ function MostraRepositorios(){
 
         var div = document.createElement('div')
         div.classList.add("repository-wrapper")
+        var link = document.createElement('a')
+        link.href = repo.link
         var h1 = document.createElement('h1')
         h1.innerHTML = repo.nome;
         var p = document.createElement('p')
@@ -79,7 +81,8 @@ function MostraRepositorios(){
 
 
         container.appendChild(div)
-        div.appendChild(h1)
+        div.appendChild(link)
+        link.appendChild(h1)
         div.appendChild(p)
         div.appendChild(divWrapper)
         divWrapper.appendChild(divLanguage)
@@ -103,6 +106,8 @@ function MostrarStar(){
 
         var div = document.createElement('div')
         div.classList.add("repository-wrapper")
+        var link = document.createElement('a')
+        link.href = repo.link
         var h1 = document.createElement('h1')
         h1.innerHTML = repo.nome;
         var p = document.createElement('p')
@@ -131,7 +136,8 @@ function MostrarStar(){
 
 
         container.appendChild(div)
-        div.appendChild(h1)
+        div.appendChild(link)
+        link.appendChild(h1)
         div.appendChild(p)
         div.appendChild(divWrapper)
         divWrapper.appendChild(divLanguage)
@@ -188,6 +194,8 @@ function displayRepository(resultado){
         
         var div = document.createElement('div')
         div.classList.add("repository-wrapper")
+        var link = document.createElement('a')
+        link.href = repo.link
         var h1 = document.createElement('h1')
         h1.innerHTML = repo.nome;
         var p = document.createElement('p')
@@ -232,12 +240,11 @@ function displayRepository(resultado){
 
 
         container.appendChild(div)
-        div.appendChild(h1)
+        div.appendChild(link)
+        link.appendChild(h1)
         div.appendChild(p)
         div.appendChild(divWrapper)
         divWrapper.appendChild(divLanguage)
-        
-        
         divWrapper.appendChild(branchContainer)
         branchContainer.appendChild(img)
         branchContainer.appendChild(pBranch)
