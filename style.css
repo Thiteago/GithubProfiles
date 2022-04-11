@@ -202,6 +202,7 @@ a:visited{
     margin-left: 20px;
     margin-top: 50px;
     width: 20%;
+    text-align: center;
 }
 
 .img-container{
@@ -343,6 +344,47 @@ a:visited{
 .branch-container > img{
     width: 10px;
 }
+
+.changecolor-container{
+    margin-top: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.changeColor-button{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+    width: 150px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 5px 5px;
+}
+
+
+.changeColor-button:hover{
+    background-color: black;
+    color: white;
+}
+
+/*
+DARK MODE
+*/
+
+.containerMain-dark{
+    background-color: #2e2e2e;
+}
+
+.containerProfile-dark{
+    color: white;
+}
+
+.fontsWhite > p{
+    color: white;
+}
+
+
+
 
 @media (max-width: 900px){
     .container-main{
