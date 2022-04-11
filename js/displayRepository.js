@@ -51,7 +51,7 @@ export function MostraRepositorios(){
         branchContainer.classList.add("branch-container")
 
         var img = document.createElement('img')
-        img.src="../assets/img/branchicon.svg";
+        img.src="assets/img/branchicon.svg";
 
         var pBranch = document.createElement('p')
         pBranch.innerHTML = repo.forks;
