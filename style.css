@@ -56,6 +56,37 @@ a:visited{
     color: inherit;
 }
 
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; } 
+}
+@-moz-keyframes fadeIn {
+0% { opacity: 0;}
+100% { opacity: 1; }
+}
+@-o-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+@keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+
+.fadeIn1s {
+    -webkit-animation: fadeIn 1.5s ease-in-out;
+    -moz-animation: fadeIn 1.5s ease-in-out;
+    -o-animation: fadeIn 1.5s ease-in-out;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.fadeIn2s{
+    -webkit-animation: fadeIn 2.5s ease-in-out;
+    -moz-animation: fadeIn 2.5s ease-in-out;
+    -o-animation: fadeIn 2.5s ease-in-out;
+    animation: fadeIn 2.5s ease-in-out;
+}
+
 @font-face {
     font-family: Collegia;
     src: url(assets/fonts/Collegia.ttf);
@@ -65,6 +96,8 @@ a:visited{
     font-family: alliance;
     src: url(assets/fonts/Alliance.otf);
 }
+
+
 
 
 .main-title{
