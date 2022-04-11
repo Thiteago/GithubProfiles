@@ -2,10 +2,9 @@ import { getRepository } from "./repository.js";
 import { Repository } from "./repository.js";
 import { nomeParam } from "./getUser.js";
 import { container } from "./scriptProfile.js";
-import { starLength } from "./displayStarred.js";
 
 
-var quantidadeEstrela = document.getElementById("star-quant")
+
 var quantidadeRepo = document.getElementById("repo-quant")
 
 //Recebe os repositorios da API
@@ -26,7 +25,6 @@ export function MostraRepositorios(){
     arrayRepo.forEach(repo => {
         var lenght = arrayRepo.length;
         quantidadeRepo.innerText = lenght
-        quantidadeEstrela.innerText = starLength
 
         var div = document.createElement('div')
         div.classList.add("repository-wrapper")

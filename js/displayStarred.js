@@ -6,10 +6,13 @@ import { container } from "./scriptProfile.js";
 
 var quantidadeEstrela = document.getElementById("star-quant")
 
+//Recebe os repositorios da API
 var starredList = getStarred(nomeParam)
+//Cria o Array
 var arrayStarred = []
-var starLength = arrayStarred.length;
 
+
+//Armazena os dados da API dentro de um array
 starredList.forEach(starred =>{
     var star = new Starred(starred.name,starred.description,starred.stargazers_count,starred.forks,starred.html_url)
     arrayStarred.push(star)
@@ -17,6 +20,7 @@ starredList.forEach(starred =>{
 
 //função que cria os elementos e os preenche com as informações do array
 export function MostrarStar(){
+
     arrayStarred.forEach(repo => {
         var lenght = arrayStarred.length;
         quantidadeEstrela.innerText = lenght
