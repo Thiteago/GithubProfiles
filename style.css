@@ -87,6 +87,37 @@ a:visited{
     animation: fadeIn 2.5s ease-in-out;
 }
 
+
+.spreadbubble {
+    background-color: #2e2e2e;
+    top: 50%;
+    left: 10%;
+    width: 50px;
+    height: 50px;
+    border-radius: 5000px;
+    position: fixed;
+    -webkit-transition: all .7s ease-in-out;
+    -moz-transition: all .7s ease-in-out;
+    -o-transition:  all .7s ease-in-out;
+    transition: all .6s ease-in-out;
+     z-index: -1;
+  }
+  .spreadbubble-change {  
+    margin: 0px;
+    transform: scale(200,200);
+    border-radius: 5000px;
+    z-index: -1;
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    background-color: #2e2e2e;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition:  all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+  }  
+
+
 @font-face {
     font-family: Collegia;
     src: url(assets/fonts/Collegia.ttf);
@@ -377,13 +408,12 @@ DARK MODE
 
 .containerProfile-dark{
     color: white;
+    
 }
 
 .fontsWhite > p{
     color: white;
 }
-
-
 
 
 @media (max-width: 900px){
